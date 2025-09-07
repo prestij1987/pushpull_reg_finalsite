@@ -1,0 +1,35 @@
+
+
+
+.tech {
+    display: inline;
+    width: 300px;
+    height: 200px;
+   
+   
+}
+
+img{
+    
+    width: 300px;
+    height: 200px;
+}
+h2 {
+    margin-top: 10px;
+}
+
+
+.inger {
+    display: inline;
+    width: 300px;
+    height: 200px;
+}
+
+.over{
+    display: inline;
+    width: 300px;
+    height: 200px;
+}
+
+
+body{background-color: rgb(110, 128, 180);}

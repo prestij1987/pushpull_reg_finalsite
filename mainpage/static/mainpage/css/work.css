@@ -1,0 +1,100 @@
+*{
+    margin: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #707f8d;
+  }
+
+  /* Контейнер карусели */
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Каждое изображение */
+  .carousel img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+
+  .carousel img:hover {
+    transform: scale(1.5);
+  }
+
+  /* Скрытый чекбокс для управления модальным окном */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Модальное окно */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background-color: rgba(15, 1, 1, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  /* Показывать модальное окно, когда чекбокс отмечен */
+  input[type="checkbox"]:checked + .modal {
+    display: flex;
+  }
+
+  /* Увеличенное изображение */
+  .modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 150px;
+    box-shadow: 0 0 15px #000;
+  }
+
+  /* Кнопка закрытия (область вокруг изображения) */
+  .modal label {
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    cursor: pointer;
+  }
+
+  .footer {
+  display: flex;
+  justify-content: space-between; /* Распределяет секции по ширине */
+  background-color: #f2f2f2;
+  padding: 20px;
+  flex-wrap: wrap; /* Чтобы на маленьких экранах секции переносились */
+}
+
+.footer-section {
+  flex: 1; /* Каждая секция занимает равную часть */
+  min-width: 200px; /* Минимальная ширина для адаптивности */
+  margin: 0 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+  

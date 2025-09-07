@@ -1,0 +1,35 @@
+ /* Стили для модального окна */
+ .modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1; /* На переднем плане */
+    left: 0;
+    top: 0;
+    width: 40%; /* Полная ширина */
+    height: 80%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку, если необходимо */
+    background-color: rgb(0,0,0); /* Черный фон с прозрачностью */
+    background-color: rgba(0,0,0,0.4); /* Черный фон с прозрачностью */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и центрировать */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина модального окна */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

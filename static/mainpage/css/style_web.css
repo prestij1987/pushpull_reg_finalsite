@@ -1,0 +1,274 @@
+*{
+    border-width: 20%;
+    
+}
+
+body, html{margin: auto;
+padding: 0%;
+max-width: 95%}
+
+#main-head{
+    background-image: url(https://a.d-cd.net/cea119cs-960.jpg);
+    object-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1000px;
+    margin-top: -200px;
+    margin-bottom: -100px;
+    
+
+
+}
+#golova{
+    
+    display: inline-block;
+    position: static;
+    margin: 0px;
+    margin-top: 200px;
+}
+
+ .zagol{
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: bold;
+    font-size: 44px;
+    color: #021738; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    opacity: .6;
+    margin-bottom: 0%;
+    margin-top: 0%;}
+
+.logotip{
+    width: 145px;
+    height:130px;
+    border: #000 solid;
+    border-radius: 50%;
+    border-color: #447ad6;
+    background-image: #5b86d1;
+    opacity: .4;
+    }
+.logotip2{
+    width:100%;
+    height:100%;
+    overflow:auto;
+}    
+    
+
+
+
+#zapros{
+    text-align: right;
+    position: absolute;
+    font-size: 25px;
+    left: 750px;
+    height: 30px;
+    
+    margin-bottom: 0%;
+
+
+}  
+.photo-2 {
+  
+   
+    display: inline-flex;
+  
+}
+.photo-cont {
+    
+    width:100%;
+    height: 100%;
+   
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.photo-cont img {
+   
+    width:100%;
+    height: 100%;
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+    50% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    } 
+    59.99999% {
+        transform: rotate(45deg) scale(3);
+        opacity: 0;
+        z-index: 1;
+    }   
+    60% {
+        opacity: 0;
+        z-index: -1;
+    }  
+    100% {
+        opacity: 1;
+    }  
+}  
+
+body{
+    background: white;
+    color: #000;
+}
+
+.but_zap{
+  float: right;
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  background: #8396b7;
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: -30px;
+
+}
+#search{
+    position: relative;
+    
+}
+#list_gruz{
+    font-weight: bold;
+    font-family: Verdana;
+    margin: 0%;
+}
+ul{
+    margin: 0%;
+   
+}
+#menu{
+    display: inline-block; 
+    color: white;
+    margin-top: 0%;
+    margin-right: 40%;
+    text-decoration: none;
+    
+}      
+
+.menu_list{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 150px;
+    padding: 10px 20px 30px 50px;
+    text-decoration: none;
+    
+}
+
+#menu a:link, #menu a:visited {
+    color: #000; / *  Цвет текста ссылок  * /
+}
+
+.link {
+    margin-top: 5px;
+}
+
+.calc{
+    background: rgb(37, 108, 189);
+    margin-top: 5px;
+
+}
+.cont_list {
+    display: flex; /* Используем Flexbox для выравнивания элементов */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+}
+
+.image_container {
+    margin-right: 20px; /* Отступ между изображением и списком */
+}
+
+.img_bus {
+    width: 600px; /* Ширина изображения */
+    height: 300px; /* Высота изображения */
+}
+
+#list_text {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+#menu a:hover, #menu a:active {
+    color: #F00; / *  Цвет текста ссылок при наведении и активном состоянии  * /
+}
+
+#menu_list{
+    width: 100%;
+    height: 40%;
+    background: white;
+}
+footer{
+    margin: 0%;
+    position: relative;/*относительное позиционирование*/
+    min-height: 40%;
+    right: 50px;
+    bottom: 0;
+    height: -40%;
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    background:grey;/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 30px;/*отступ сверху*/
+    margin-bottom: 10px;
+}
+footer.wave{
+    position: relative;/*абсолютное позиционирование*/
+    top: 100px;
+    left: 0;
+    width: 110%;
+    height: 70px;
+    
+}
+
+.menu{
+    position: relative;
+    color: white;
+    display: flex;
+    margin-right: 15px;
+    max-width: 100%;
+    gap: 10px;
+
+    margin: 20px ;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+
+
+.menu li{
+    list-style: none;/*удалить черные маркеры*/
+    color: white;
+}
+.social.li.a {
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu.li.a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.menu.li.a:hover {
+    opacity: 1;
+}
+footer.p {
+    color: #fff;
+    
+    margin-top: 15px;
+    margin-right: 15px;}
+
+ .menu-container {
+    margin-right: 15px;
+ }   
+
+   

@@ -1,0 +1,35 @@
+*{
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+body, html{margin: auto;
+    padding: 0%;
+    max-width: 95%;
+    background-color: rgb(89, 113, 182);
+}
+
+img{
+    width: 300px;
+    height: 150px;
+    transition: width 0.5s ease;
+}
+.size:hover, img { width:500px;
+
+}
+.size{
+    display: inline-block;
+    
+}
+.photo{
+    
+    display: inline-flex;
+}
+
+#pic1 {
+    display: inline-block;
+}
+
+#pic2{
+    display: inline-block;
+}

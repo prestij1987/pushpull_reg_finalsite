@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Выполненные работы</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #707f8d;
+  }
+
+  /* Контейнер карусели */
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Каждое изображение */
+  .carousel img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+
+  .carousel img:hover {
+    transform: scale(1.5);
+  }
+
+  /* Скрытый чекбокс для управления модальным окном */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Модальное окно */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background-color: rgba(15, 1, 1, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  /* Показывать модальное окно, когда чекбокс отмечен */
+  input[type="checkbox"]:checked + .modal {
+    display: flex;
+  }
+
+  /* Увеличенное изображение */
+  .modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 150px;
+    box-shadow: 0 0 15px #000;
+  }
+
+  /* Кнопка закрытия (область вокруг изображения) */
+  .modal label {
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    cursor: pointer;
+  }
+
+  .footer {
+  display: flex;
+  justify-content: space-between; /* Распределяет секции по ширине */
+  background-color: #f2f2f2;
+  padding: 20px;
+  flex-wrap: wrap; /* Чтобы на маленьких экранах секции переносились */
+}
+
+.footer-section {
+  flex: 1; /* Каждая секция занимает равную часть */
+  min-width: 200px; /* Минимальная ширина для адаптивности */
+  margin: 0 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+ <a href="/">Главная</a>    
+    <h1 >Фото выполненных работ</h1>
+<div class="carousel">
+  
+  <!-- Первый слайд -->
+  <input type="checkbox" id="img1" />
+  <label for="img1">
+    <img src="https://metaprom.ru/board_foto/1473914014foto1_big.jpg" alt="Изображение 1" />
+  </label>
+  
+  <div class="modal">
+    <label for="img1"></label>
+    <img src="https://metaprom.ru/board_foto/1473914014foto1_big.jpg" alt="Увеличенное изображение 1" />
+  </div>
+
+  <!-- Второй слайд -->
+  <input type="checkbox" id="img2" />
+  <label for="img2">
+    <img src="https://xn--80awnh.xn--80adxhks/userfls/cars/796x481/44_kassberer-lb4e.jpg" alt="Изображение 2" />
+  </label>
+  
+  <div class="modal">
+    <label for="img2"></label>
+    <img src="https://xn--80awnh.xn--80adxhks/userfls/cars/796x481/44_kassberer-lb4e.jpg" alt="Увеличенное изображение 2" />
+  </div>
+
+  <!-- Третий слайд -->
+  <input type="checkbox" id="img3" />
+  <label for="img3">
+    <img src="https://30.img.avito.st/image/1/1.z55kkba4Y3dyOdl9dqLglEkwYXHaMMF-ajphddQ4a33S.eljVY83pHCOkp0sMq3orzwHU_tbIpSFnzeoHOTg8V-c" alt="Изображение 3" />
+  </label>
+  
+  <div class="modal">
+    <label for="img3"></label>
+    <img src="https://30.img.avito.st/image/1/1.z55kkba4Y3dyOdl9dqLglEkwYXHaMMF-ajphddQ4a33S.eljVY83pHCOkp0sMq3orzwHU_tbIpSFnzeoHOTg8V-c" alt="Увеличенное изображение 3" />
+  </div>
+  <!-- Четверты слайд -->
+  <input type="checkbox" id="img4" />
+  <label for="img4">
+    <img src="https://avatars.mds.yandex.net/get-altay/13668123/2a0000019642e224d647c249aa6ec15ea7b9/XXL_height" alt="Изображение 3" />
+  </label>
+  
+  <div class="modal">
+    <label for="img4"></label>
+    <img src="https://avatars.mds.yandex.net/get-altay/13668123/2a0000019642e224d647c249aa6ec15ea7b9/XXL_height" alt="Увеличенное изображение 3" />
+  </div>
+
+  <!-- Пятый слайд слайд -->
+    <input type="checkbox" id="img5" />
+  <label for="img5">
+    <img src="https://avatars.mds.yandex.net/get-sprav-products/10022375/2a0000018e09adf5b6075dd4bd4aac4f5b8c/M_height" alt="Изображение 5" />
+  </label>
+  
+  <div class="modal">
+    <label for="img5"></label>
+    <img src="https://avatars.mds.yandex.net/get-sprav-products/10022375/2a0000018e09adf5b6075dd4bd4aac4f5b8c/M_height" alt="Увеличенное изображение 5" />
+  </div>
+
+   <!-- Шестой слайд слайд слайд -->
+    <input type="checkbox" id="img6" />
+  <label for="img6">
+    <img src="https://avatars.mds.yandex.net/i?id=a8e95a497c0b72b3e07c9a0a08129310_l-5338563-images-thumbs&n=13" alt="Изображение 6" />
+  </label>
+  
+  <div class="modal">
+    <label for="img6"></label>
+    <img src="https://avatars.mds.yandex.net/i?id=a8e95a497c0b72b3e07c9a0a08129310_l-5338563-images-thumbs&n=13" alt="Увеличенное изображение 6" />
+  </div>
+</div>
+ <!-- Седьмой слайд слайд слайд -->
+ 
+  <div class="modal_img">
+    <label for="img7"></label>
+    <img src="https://avatars.mds.yandex.net/get-ydo/3614230/2a0000017d2ccc7e38386f6904123afc7393/diploma" style="width: 300px; height: 200px;" alt="Увеличенное изображение 7" />
+    <img src="https://avatars.mds.yandex.net/get-ydo/1540809/2a0000017d2cd59141b331fc713ae81de764/diploma" style="width: 300px; height: 200px;" alt="Увеличенное изображение 8" />
+    <img src="https://sapsan23.ru/upload/iblock/f3b/f3b02b126075ab5d13d7f6e6223c4a2c.jpeg" style="width: 300px; height: 200px;" alt="Увеличенное изображение 9" />
+    <img src="https://70.img.avito.st/image/1/1.m--w7baspWMEziGECcKIzMv8NAQG.pTw83nJlID3R7mAMu1VhMenNCsC0GhP-TUvghw6tAj0" style="width: 300px; height: 200px;" alt="Увеличенное изображение 10" />
+    <img src="https://nord-transport.ru/wp-content/gallery/nashi-raboty/260720121169-min.jpg" style="width: 300px; height: 200px;" alt="Увеличенное изображение 11" />
+    <img src="https://avatars.mds.yandex.net/i?id=bed7b73aef2d02516fc040d08c7b9a29_l-4937309-images-thumbs&n=13" style="width: 300px; height: 200px;" alt="Увеличенное изображение 12" />
+    <img src="https://yandex-images.clstorage.net/Tt56D1v32/914bceR8A/4PaeMrhahM5bc4FERdhLI7-yf5EFmIawwRYZeFtTgPVYjxFhKNALQBseyx8o8jxwhYb1IQk0v8Y8Zt-qxyk6NKiu21LEJpnLFnLIWUztHnPjtguxfbiu5f3S8a3jx2gYpE-d-K35az0eE26nFeLpoZSnhECsXCa-tCcqr0vRM7gsojc_pVK0ovu_5TRMIJsX5saPOaGc8mGZtkmNo9eYPMTn3VARrb6xwt-iFlkOYZnsbwBokMya2qxrqm_DCXM0_Fbbf60yVDaTH1k4UCjvW9biR3GdMMoBTfrJkUtXOJjo-5HMNb1-xZJ3ph4Z9umRWG_QBIDQvoJoE3JnH30LYODiZ-tlKlhax39RTJC4v49qInMBsZAyYUXOnYn_X1j4fMMxuBH91qW-U5p-fRqJeZgTECwkPILSCCfyN8uJf7gk0veXzcrUBnf3xWy0pDN7LgILua0odgXNijGx_1tUoGiLLYSFkXrlCpcG_kGqpQWke1TQQAw6moQrqiP_4Wv0lD4Py1VGZP5LjzEAFKhbn6qm-yml7N7FVXIBlcsXVJw03yVAjSkGUXL30mIdqrU5CKMYwFyIfiLwJ4pzC9UHdPjqf_eNrlC28-85SACk23vaxi8BlayWbVHmRWm7AxjE-D8ltAWx1q2K-wrCBZZZ1axLqPxYNDLm5GcG5_eZ8-D47hOfiV5U2teTmWQALCeL5iJfRbkQloVlKkWtY9cMENwLSfCNUU4JMs_OFgESPR2UD-QEcOTOmgTrgk8Xkbc4hD7fl-UGXCp_E0EwAMCvm6Zq_0H1jMpBIWq1ffsTOIj0c9mEOYmOCUJnqu4ZdvGtaGtkIBTAYkY4N3pz41V_FABi4w_ZSihWn_utkLQk69eSjkeljVjy1WGSSWUnFwwAxEeVmMX9tm3CD8IOrdKNFRwbhHRYbE5egN8u06t5pzio3rNTOeK4nr8nKWho3MfjLsKzfYUU9jmxHjmNz_8c" style="width: 300px; height: 200px;" alt="Увеличенное изображение 13" />
+
+</div>
+
+<footer class="footer">
+  <div class="footer-section">
+    <h3>Контакты</h3>
+    <p>Телефон: <a href="tel:+71234567890">+7 (916) 638-93-27</a></p>
+    <p>Email: <a href="mailto:info@example.com">push.pull2020@yandex.ru</a></p>
+  </div>
+  <div class="footer-section">
+    <h3>О компании</h3>
+    <p>Негабаритные перевозки в Республике Саха? Иркутской области, Магаданской области и Хабаровскому краю.</p>
+  </div>
+  <div class="footer-section">
+    <h3>Адрес</h3>
+    <p>Республика Саха п.Нижний Куранах</p>
+  </div>
+</footer>
+</body>
+</html>
